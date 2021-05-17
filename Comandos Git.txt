@@ -1,0 +1,72 @@
+- ¿Qué es Git?
+----------------
+**Sistema de Versiones:**
+Git es un sistema de control de revisión distribuido, rápido y escalable con un conjunto de comandos inusualmente rico que proporciona operaciones de alto nivel y acceso completo a componentes internos.
+
+
+Comandos de Consola
+-----------------------
+
+- clear : para limpiar la vista de la consola
+- ls : para listar los archivos 
+- ls -al : lista todas las carpetas incluso las ocultas
+- pwd : para ver la ruta/ direccion de mi directorio actual
+- cd nombre : para entrar en una carpeta
+- cd .. : para regresar en una carpeta
+- mkdir nombre : para crear una carpeta
+- rmdir nombre : para borrar una carpeta
+- touch nombre archivo : para crear o ingresar a un archivo si existiera
+- cat nombre archivo : nos muestra el contenido del archivo (solo una vista previa)
+- cat >example1 : para crear un archivo
+- history : muestra todos los comandos echos en la consola
+
+
+Comandos de GIT
+----------------------
+**Para configurar GIT**
+
+- git --version: Para ver la versión de git que tenemos instalada.
+- git config --global user.name "tu nombre": para guardar tu nombre en git.
+- git config --global user.emal: para guardar el email en git.
+- git config --list: para ver las configuraciones de git
+- git config --global core.editor  nano: para determinar el modelo de la consola que usaremos .
+
+
+**Para trabajar en el repositorio interno (guardadas en nuestra pc)**
+- git init: Sirve para iniciar un trabajo con git, solo debe hacerse una vez (crea una carpeta oculta llamada .git).
+- git status: para ver el estado de los archivos.
+- git add (nombre del archivo) o . (para agregar todo): para iniciar el seguimiento de los archivos con cambios a listo para ser commiteados.
+- git rm --cached: Saca de staging el archivo preparado y lo deja untracked.
+- git commit -m "el titulo del commit": añade un comentario a los cambios y confirma los cambios echos en el git add y son guardados localmente.
+- git commit -am "el mensaje": hace el commit y el add en una sola linea de comando
+- git commit --amend: permite abrir el ultimo commit escrito y añadir un cambio nuevo al mismo commit
+
+**Para ver el historial de cambios**
+- git log: Sirve para ver el historial de cambios realizados en el proyecto.
+
+- git show: muestra cuales fueron los cambios nuevos (en color verde en la terminal)
+
+- git diff primercommit segundocommit: compara los commit y muestra las diferencias
+
+- git reset --soft: volver en el tiempo, volver a una version anterior pero manteniendo las modificacion o cambion que tenga en el steagen 
+            --hard: perdiendo modificaciones 
+
+
+*****crear rama master que es el cascaron luego creamos otros sobre los cuales trabajar
+
+- git branch: me indica en que rama estoy ubicado (si escribo algo antes del enter creo una)
+- git checkout ramaAlaQueQuieroIr: para cambiar de rama
+- git checkout -b NuevaRama: crea la rama y automaticamente nos posiciona en esa rama
+- git merge otrarama: es para fucionar
+- ls -al: para ver las carpetas ocultas de git
+
+
+**github = Repositorio Remoto
+git remote add origin https://github.com/germaxrobles/Web.git: para agregar el repositorio local al repositorio en la nube de github
+git remote -v: para saber si efectivamente estamos conectados al repositorio en la nube de github
+git push "origin" master: manda informacion desde mi repositorio local al remoto "nombre del repositorio en la nube" / agrego master u otro nombre para mandar la rama master
+git pull: trae el reposito remoto al repositorio local y automaticamente hace un merge (lo une y actualiza) el directorio de trabajo
+
+git clone "link de github": clona la carpeta con el repositorio desde la nube
+
+code . abre el visual code
