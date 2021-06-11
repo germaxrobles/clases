@@ -1,0 +1,89 @@
+Bucles
+-----------
+
+- For
+
+Array
+-----------
+
+- Métodos y operaciones
+
+Desafíos en clase
+--------------------------
+
+**Número 1**
+
+- Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión " - ".
+ 
+**Número 2**
+
+- Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
+
+**Número 3**
+
+- Realiza un script que cuente el número de vocales que tiene un texto y las muestre en pantalla.        
+
+
+**Bucles o Loops:** 
+----------------------
+Los bucles o loops son herramientas para la ejecución de código de manera reiterada siempre que cumpla con  una condición
+**While:** es un bucle que primero hace una evaluación en el parámetro y luego ejecuta el código hasta que la condición se cumpla
+**do While** a diferencia del while primero ejecuta el código y después hace la revisión de la condición hasta que se cumpla (en este método la función se ejecuta al menos una vez por mas que la condición no se cumpla)
+**For:** al igual que el while y el doWhile este bucle me permite ejecutar código de manera repetida siempre que cumpla una condición pero tiene la particularidad de que esta puede recibir dentro de la evaluación los parentesís la variable que hara la iteracion de numero de ejecuciones y la cantidad
+
+**Arrays**
+-----------
+Un arreglo es una lista ordenada de elementos de cualquier tipo estos van dentro de [ ] corchetes  y van separados por , comas.
+
+**Para mostrar un elemento:**La posición de un elemento de un Array/Arreglo sirve para obtener un elemento y se la puede obtener pasando le la posición del elemento que queremos obtener array[1] devolverá el segundo elemento (porque siempre empieza a contar desde 0).
+
+join()
+-------
+Me permite unificar todos los elementos de un array en una sola cadena de texto
+
+
+Push()
+-------
+**Para agregar un elemento:** Con array.push se le puede introducir un nuevo elemento al array en su ultima posición 
+**Para Reemplazar un elemento:** Se le puede pasar la el elemento nuevo a ingresar en la posición en la que queremos reemplazar.
+array[1] = "Germán"; // reemplazamos el elemento en la posición 1
+
+Splice()
+--------
+**Para colocar en una posición especifica:** Utilizamos el método splice() en donde recibe 3 parámetros 1ro es la posición, 2do es para borrar elementos, 3ro el elemento que queremos agregar splice(0,0,"nuevo elemento")
+
+Splice()
+---------
+**Para Borrar un elemento:** Usando Splice() en el segundo parámetro recibe la cantidad de elementos a borrar y en el primero la posición del elemento que  queremos borrar
+
+pop()
+------
+Para quitar el ultimo elemento del array.
+
+unshift(nuevo elemento)
+---------
+Para agregar en la primera posición un nuevo elemento.
+
+shift()
+--------
+Elimina el primer elemento del array.
+
+indexOf(nombre del elemento)
+----------
+Me devuelve la posición, el indice del elemento. Si no existe el elemento me devuelve un -1
+
+concat(array)
+------------
+Sirve para juntar dos arreglos en uno solo. En un arreglo nuevo
+
+includes()
+--------
+Me permite encontrar un valor si existe o no en el array
+
+reverse()
+----------
+Me invierte el orden de el array
+
+sort()
+------
+Me ordena el Array. Ordenación no es necesariamente estable. El modo de ordenación por defecto responde a la posición del valor del string de acuerdo a su valor Unicode ( universalidad, uniformidad y unicidad.).
